@@ -1,0 +1,111 @@
+:root{
+    --gray: #333333;
+    --graylight: #4F4F4F;
+    --dust:#BDBDBD;
+    --inconsolata : 'Inconsolata', monospace;
+    --spaceMono:'Space Mono', monospace;
+    --footerfont: 'Montserrat', sans-serif;
+}
+
+#title{
+    font-family: var(--inconsolata);
+    padding: 1rem 2rem 4rem 1rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.12rem;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+article{
+padding: 2rem;
+}
+body{
+       background-color: #fff;
+       box-sizing: border-box;
+       border-radius: 0.5rem;
+       
+}
+
+main img{
+    padding: 1rem;
+    width: 100%;
+}
+h1{
+    font-family: var(--spaceMono);
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: normal;
+    letter-spacing: -0.105rem;
+    width: 100%;
+}
+
+p{
+    font-family: var(--spaceMono);
+    width: fixed 23.8125rem;
+    height: fixed 6.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0525rem;
+    color: var(--graylight);
+    color: var(--graylight);
+    padding-bottom: 2rem;
+}
+
+button{
+    border: solid;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    background-color: var(--gray);
+    letter-spacing: -0.03063rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--spaceMono);
+    color: white;
+    font-style: normal;
+}
+
+footer{
+    text-align: center;
+    padding: 7rem 2rem 1rem 2rem;
+    font-family: var(--footerfont);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--dust);
+  
+    
+}
+footer a{
+    text-decoration: none;
+    
+    color:var(--dust) ;
+    font-family: var(--footerfont);
+}
+@media(min-width : 780px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        padding: 1rem;
+        text-align: left;
+       
+    }
+    #title{
+        margin-left: 3rem;
+        padding-left: 3rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    #img{
+        grid-column: 1/6;
+        padding: 3rem 4rem 2rem 1rem;
+        
+    }
+    #text{
+        padding-left:2rem;
+        grid-column: 6/11;
+    }
+    #title{
+        text-align: left;
+    }
+}
